@@ -1156,6 +1156,7 @@ m_ResolvedPackages:
     - 5.0.0-pre.12
     - 5.0.0-pre.13
     - 5.0.2
+    - 5.1.0-pre.1
     compatible:
     - 4.2.6
     - 5.0.0-pre.5
@@ -1166,6 +1167,7 @@ m_ResolvedPackages:
     - 5.0.0-pre.12
     - 5.0.0-pre.13
     - 5.0.2
+    - 5.1.0-pre.1
     verified: 4.2.6
   dependencies:
   - name: com.unity.xr.arsubsystems
@@ -1341,6 +1343,7 @@ m_ResolvedPackages:
     - 5.0.0-pre.12
     - 5.0.0-pre.13
     - 5.0.2
+    - 5.1.0-pre.1
     compatible:
     - 4.2.6
     - 5.0.0-pre.5
@@ -1351,6 +1354,7 @@ m_ResolvedPackages:
     - 5.0.0-pre.12
     - 5.0.0-pre.13
     - 5.0.2
+    - 5.1.0-pre.1
     verified: 4.2.6
   dependencies:
   - name: com.unity.xr.arsubsystems
@@ -3663,6 +3667,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.6
     - 1.2.0-exp.7
     - 1.2.0
+    - 1.2.1
     compatible:
     - 1.0.1
     - 1.1.0
@@ -3675,6 +3680,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.6
     - 1.2.0-exp.7
     - 1.2.0
+    - 1.2.1
     verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework

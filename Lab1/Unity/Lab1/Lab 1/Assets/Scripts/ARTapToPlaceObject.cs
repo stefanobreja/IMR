@@ -8,15 +8,14 @@ using UnityEngine.XR.ARSubsystems;
 public class ARTapToPlaceObject : MonoBehaviour
 {
 
-    public GameObject gameObjectToInstantiate;
-    
-    private Transform player;
-    private float dist;
-    private float howClose;
+    public GameObject playerGameObjectToInstantiate;
+    public GameObject enemyGameObjectToInstantiate;
 
-    private GameObject spawnedObject;
+
+    private GameObject playerSpawnedObject;
+    private GameObject enemySpawnedObject;
+
     private ARRaycastManager _arRaycastManager;
-    private Vector2 touchPosition;
 
     static List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
@@ -24,13 +23,10 @@ public class ARTapToPlaceObject : MonoBehaviour
     {
         _arRaycastManager = GetComponent<ARRaycastManager>();
     }
-    void Start(){
-
-    }
 
     bool TryGetTouchPosition(out Vector2 touchPosition)
     {
-        if (Input.touchCount> 0)
+        if (Input.touchCount > 0)
         {
             touchPosition = Input.GetTouch(0).position;
             return true;
@@ -39,10 +35,10 @@ public class ARTapToPlaceObject : MonoBehaviour
         touchPosition = default;
         return false;
     }
-    
+
     void Update()
     {
-        if(!TryGetTouchPosition(out Vector2 touchPosition))
+        if (!TryGetTouchPosition(out Vector2 touchPosition))
         {
             return;
         }
@@ -50,15 +46,23 @@ public class ARTapToPlaceObject : MonoBehaviour
         {
             var hitPose = hits[0].pose;
 
-            if(spawnedObject == null)
+            if (enemySpawnedObject == null)
             {
-                spawnedObject = Instantiate(gameObjectToInstantiate, hitPose.position, hitPose.rotation);
+                enemySpawnedObject = Instantiate(enemyGameObjectToInstantiate, hitPose.position, hitPose.rotation);
+                enemySpawnedObject.tag = "enemy";
+
+                Debug.Log("Enemy tag: " + enemySpawnedObject.tag);
+            }
+
+            if (enemySpawnedObject != null && playerSpawnedObject == null)
+            {
+                playerSpawnedObject = Instantiate(playerGameObjectToInstantiate, hitPose.position, hitPose.rotation);
+                playerSpawnedObject.tag = "Player";
             }
             else
             {
-                spawnedObject.transform.position = hitPose.position;
+                playerSpawnedObject.transform.position = hitPose.position;
             }
         }
-        
     }
 }

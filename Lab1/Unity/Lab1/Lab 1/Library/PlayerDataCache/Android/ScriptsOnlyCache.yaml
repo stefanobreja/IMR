@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ARTapToPlaceObject
+    - PlayerBehaviour
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.XR.ARCore.Editor.dll:
@@ -24,6 +25,14 @@ ScriptsOnlyBuild:
     Unity.XR.Management.dll:
     - UnityEngine.XR.Management.XRGeneralSettings
     - UnityEngine.XR.Management.XRManagerSettings
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -58,8 +67,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -69,27 +76,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1554}
+      Script: {instanceID: 1556}
     - Class: 114
-      Script: {instanceID: 1678}
+      Script: {instanceID: 1680}
     - Class: 114
-      Script: {instanceID: 3538}
+      Script: {instanceID: 3542}
     - Class: 114
-      Script: {instanceID: 3982}
+      Script: {instanceID: 3986}
     - Class: 114
-      Script: {instanceID: 4048}
+      Script: {instanceID: 4052}
     - Class: 114
-      Script: {instanceID: 6378}
+      Script: {instanceID: 6382}
     - Class: 114
-      Script: {instanceID: 7234}
+      Script: {instanceID: 7238}
     - Class: 114
-      Script: {instanceID: 7662}
+      Script: {instanceID: 7666}
     - Class: 114
-      Script: {instanceID: 8100}
+      Script: {instanceID: 8106}
     - Class: 114
-      Script: {instanceID: 8564}
+      Script: {instanceID: 8570}
     - Class: 114
-      Script: {instanceID: 8720}
+      Script: {instanceID: 8726}
+    - Class: 114
+      Script: {instanceID: 31062}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -967,7 +976,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerDownMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 2405c4962b0815da60cab2a20badc659
+      Hash: 673b9782433a829f4dc068d94c9c85c9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ARTapToPlaceObject
@@ -1145,7 +1154,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: fe0c3561ad38910023887fe898cc40cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: aebd0decf9d12340f9bb37a8c08753e4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DetectionZone
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/stefan/Documents/Facultate/Unity/Lab1/Lab 1/lab1.apk
+  playerPath: /Users/stefan/Documents/Facultate/IMR/Lab1/Unity/Lab1/Lab 1/lab1.apk

@@ -9,6 +9,10 @@ public class ARTapToPlaceObject : MonoBehaviour
 {
 
     public GameObject gameObjectToInstantiate;
+    
+    private Transform player;
+    private float dist;
+    private float howClose;
 
     private GameObject spawnedObject;
     private ARRaycastManager _arRaycastManager;
@@ -19,6 +23,9 @@ public class ARTapToPlaceObject : MonoBehaviour
     private void Awake()
     {
         _arRaycastManager = GetComponent<ARRaycastManager>();
+    }
+    void Start(){
+
     }
 
     bool TryGetTouchPosition(out Vector2 touchPosition)

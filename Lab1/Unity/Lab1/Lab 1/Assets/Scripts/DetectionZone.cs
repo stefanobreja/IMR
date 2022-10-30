@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// for detection
 public class DetectionZone : MonoBehaviour
 {
     public string tagEnemy = "enemy";

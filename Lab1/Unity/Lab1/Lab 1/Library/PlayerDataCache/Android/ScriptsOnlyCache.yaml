@@ -80,6 +80,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1680}
     - Class: 114
+      Script: {instanceID: 3280}
+    - Class: 114
       Script: {instanceID: 3542}
     - Class: 114
       Script: {instanceID: 3986}
@@ -92,13 +94,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7666}
     - Class: 114
-      Script: {instanceID: 8106}
+      Script: {instanceID: 8108}
     - Class: 114
-      Script: {instanceID: 8570}
+      Script: {instanceID: 8572}
     - Class: 114
-      Script: {instanceID: 8726}
-    - Class: 114
-      Script: {instanceID: 31062}
+      Script: {instanceID: 8728}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -368,6 +368,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: AROcclusionManager
+  - hash:
+      serializedVersion: 2
+      Hash: fe0c3561ad38910023887fe898cc40cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerBehaviour
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -1000,6 +1006,12 @@ ScriptsOnlyBuild:
     className: EventTrigger
   - hash:
       serializedVersion: 2
+      Hash: aebd0decf9d12340f9bb37a8c08753e4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DetectionZone
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1154,18 +1166,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: fe0c3561ad38910023887fe898cc40cb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlayerBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: aebd0decf9d12340f9bb37a8c08753e4
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DetectionZone
   platform: 13
   scenePathNames:
   - Assets/Scenes/SampleScene.unity

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// for animation
 public class PlayerBehaviour : DetectionZone
 {
     private Animator mAnimator;
